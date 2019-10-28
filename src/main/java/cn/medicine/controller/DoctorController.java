@@ -138,10 +138,12 @@ public class DoctorController {
     public String uploadDoc(HttpServletRequest request,Model model) {
         return "uploadDocumentPatient";
     }
+
     @RequestMapping(value = "/toUpdate")
     public String toUpdate(HttpServletRequest request,Model model) {
         return "doctorModifyInformation";
     }
+
     @RequestMapping(value = "/update",method= RequestMethod.POST)
     public String update(HttpServletRequest request,Model model) {
         if(request.getSession()!=null) {

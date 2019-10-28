@@ -546,22 +546,27 @@ public class RecordController {
     public String toAddBasicBody(HttpServletRequest request,Model model){
         return "patientAddBasicBodyInfo";
     }
+
     @RequestMapping(value="/hospitalRecord4Doctor")
     public String hospitalRecord4Doctor(HttpServletRequest request,Model model){
         return "doctorHospitalRecord";
     }
+
     @RequestMapping(value="/clinicRecord4Doctor")
     public String clinicRecord4Doctor(HttpServletRequest request,Model model){
         return "doctorClinicRecord";
     }
+
     @RequestMapping(value="/toAddClinicRecord")
     public String toAddClinicRecord(HttpServletRequest request,Model model){
         return "addClinicRecord";
     }
+
     @RequestMapping(value="/toAddHospitalIn")
     public String toAddHospitalIn(HttpServletRequest request,Model model){
         return "addHospitalIn";
     }
+
     @RequestMapping(value="/toAddHospitalCheck")
     public String toAddHospitalCheck(HttpServletRequest request,Model model){
         return "addHospitalCheck";
